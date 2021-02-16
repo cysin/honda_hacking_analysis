@@ -1,0 +1,20 @@
+
+
+Device detected:  ()
+
+Try to find address in memory...
+Attempt msm_cameraconfig exploit...
+Detected kernel physical address at 0x00208000 form iomem
+
+Attempt fb_mem exploit...
+Detected kernel physical address at 0x00208000 form iomem
+You need to manage to get remap_pfn_range address.
+
+Try copying kernel memory... It will take a long time.
+Attempt get_user exploit...
+error in setsockopt().
+Failed to get prepare_kernel_cred address.
+Failed to get commit_creds address.
+Failed to get ptmx_fops address.
+ () is not supported.
+Failed to setup variables.

