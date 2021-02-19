@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>honda hack register</title>
+</head>
+<body>
+<main>
+<p >本田黑科技注册码生成器，根据当前最新版得来，后续版本有可能会改变算法<br /> 注册码格式为'XXXX-XXXX'，后四位字符随便输，不做判断(20210219)</p>
+<div>
+    <div>
+        <div>
+            设备ID：<input type="text" id="device_id" placeholder="设备ID，例如'FDF4367A'" >
+            <button type="button" id="calc" onclick="on_button_click()" >计算</button>
+        </div>
+        <div>
+            注册码：<input id="reg_code" type="text" placeholder="注册码" readonly>
+        </div>
+    </div>
+</div>
+</main>
+<script>
+    function is_valid_code(code) {
+        return typeof code === 'string'
+            && code.length === 8
+            && !isNaN(Number('0x' + code))
+    }
+    function hash_code(str) {
+        var hash = 0, i, chr;
+        for (i = 0; i < str.length; i++) {
+            chr   = str.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    }
+    function round(v) {
+        return (v >= 0 || -1) * Math.floor(Math.abs(v));
+    }
+
+    function on_button_click() {
+        var device_id = document.getElementById("device_id").value.toUpperCase();
+        if(!is_valid_code(device_id)) {
+            alert('请输入8位设备ID');
+            return false;
+        }
+        var str = "google.com" + device_id;
+        var code = hash_code(str);
+        var c = Math.imul(code, code);
+        var d = round(53 / code);
+        var e = round(code / 4);
+        var f = Math.imul(e, 113);
+        var i = c + d + f;
+        var j = 65535 & ((i & 65535) + ((i & -65536) >>> 16));
+        var hex_str = j.toString(16);
+        document.getElementById("reg_code").value = hex_str.toUpperCase()+'-XXXX';
+    };
+</script>
+</body>
+</html>
