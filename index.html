@@ -54,7 +54,7 @@
         var f = Math.imul(e, 113);
         var i = c + d + f;
         var j = 65535 & ((i & 65535) + ((i & -65536) >>> 16));
-        var hex_str = j.toString(16);
+        var hex_str = j.toString(16).padStart(4,0);
         document.getElementById("reg_code").value = hex_str.toUpperCase()+'-XXXX';
     };
 </script>
